@@ -8,17 +8,18 @@ html {
 }
 body {
     background: linear-gradient(hsl(273, 75%, 66%) 0%, hsl(240, 73%, 65%) 100%);
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    overflow: hidden;
+    max-width: 1440px;
+    min-width: 80rem;
+    overflow-y: hidden;
 }
 #bg-pattern-mobile, #woman-image-mobile {
     display: none;
 }
-#bg-pattern-desktop, #box-image-desktop, #woman-image-desktop {
+#bg-pattern-desktop, #box-image-desktop, #woman-image-desktop, .overflow-hidden-images-container {
     display: block;
 }
 /* #bg-pattern-desktop {
@@ -27,6 +28,9 @@ body {
     flex-basis: 50px;
     flex-grow: 1;
     flex-shrink: 0;
+}
+body {
+    min-width: 375px;
 }
 main {
     display: flex;
@@ -123,14 +127,60 @@ main {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
     * {
         box-sizing: border-box;
     }
-    #bg-pattern-desktop, #box-image-desktop, #woman-image-desktop {
+    #bg-pattern-desktop, #box-image-desktop, #woman-image-desktop, .overflow-hidden-images-container {
         display: none;
     }
     #bg-pattern-mobile, #woman-image-mobile {
         display: block;
+    }
+    main {
+        flex-direction: column;
+        height: 50rem;
+        width: 30rem;
+    }
+    .FAQ-image {
+        flex-basis: 8rem;
+    }
+    #woman-image-mobile {
+        position: absolute;
+        width: 22rem;
+        left: 4rem;
+        top: -10rem;
+    }
+    #bg-pattern-mobile {
+        position: absolute;
+        top: 0.2rem;
+        width: 22rem;
+        left: 4rem;
+    }
+    .title {
+        text-align: center;
+    }
+    .FAQ-info {
+        margin-right: auto;
+        width: 30rem;
+        padding-left: 0;
+    }
+    .accordion-container {
+        width: 30rem;
+    }
+    .arrow-icon {
+        right: 2.3rem;
+    }
+    .accordion-ul {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        width: 30rem;
+    }
+    .accordion-divider {
+        right: -2rem;
+        width: auto;
+    }
+    .accordion-body {
+        margin-right: 2rem;
     }
 }
