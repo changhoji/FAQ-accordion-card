@@ -1,40 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <script src="accordion.js"></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="style.css" />
+
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <style></style>
 </head>
+
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+  <div class="upside-whitespace"></div>
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+  <main>
+    <div class="FAQ-image">
+      <img src="images/illustration-woman-online-mobile.svg" id="woman-image-mobile" />
+      <img src="images/bg-pattern-mobile.svg" id="bg-pattern-mobile" />
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
+      <div class="overflow-hidden-images-container">
+        <img src="images/bg-pattern-desktop.svg" id="bg-pattern-desktop" />
+        <img src="images/illustration-woman-online-desktop.svg" id="woman-image-desktop" />
+      </div>
+      <img src="images/illustration-box-desktop.svg" id="box-image-desktop" />
+    </div>
+    <div class="FAQ-info">
+      <div class="title">FAQ</div>
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
-
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
-
+      <div class="accordion-container">
+        <ul class="accordion-ul">
+          <li>
+            <div class="accordion-menu" onclick="toggle_accordion(this)">
+              How many team members can I invite?<img src="images/icon-arrow-down.svg" alt="arrow icon"
+                class="arrow-icon" />
+            </div>
+            <div class="accordion-body">
+              You can invite up to 2 additional users on the Free plan. There
+              is no limit on team members for the Premium plan.
+            </div>
+          </li>
+          <hr class="accordion-divider" />
+          <li>
+            <div class="accordion-menu">
+              What is the maximum file upload size?
+              <img src="images/icon-arrow-down.svg" alt="arrow icon" class="arrow-icon" />
+            </div>
+            <div class="accordion-body">
+              No more than 2GB. All files in your account must fit your
+              allotted storage space.
+            </div>
+          </li>
+          <hr class="accordion-divider" />
+          <li>
+            <div class="accordion-menu">
+              How do I reset my password?<img src="images/icon-arrow-down.svg" alt="arrow icon" class="arrow-icon" />
+            </div>
+            <div class="accordion-body">
+              Click “Forgot password” from the login page or “Change password”
+              from your profile page. A reset link will be emailed to you.
+            </div>
+          </li>
+          <hr class="accordion-divider" />
+          <li>
+            <div class="accordion-menu">
+              Can I cancel my subscription?<img src="images/icon-arrow-down.svg" alt="arrow icon" class="arrow-icon" />
+            </div>
+            <div class="accordion-body">
+              Yes! Send us a message and we’ll process your request no
+              questions asked.
+            </div>
+          </li>
+          <hr class="accordion-divider" />
+          <li>
+            <div class="accordion-menu">
+              Do you provide additional support?<img src="images/icon-arrow-down.svg" alt="arrow icon"
+                class="arrow-icon" />
+            </div>
+            <div class="accordion-body">
+              Chat and email support is available 24/7. Phone lines are open
+              during normal business hours.
+            </div>
+          </li>
+          <hr class="accordion-divider" />
+        </ul>
+      </div>
+    </div>
+  </main>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+      href="https://github.com/changhoji">ChangHo Lee</a>.
   </div>
 </body>
+
 </html>

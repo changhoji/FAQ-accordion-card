@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 12px;
+}
+body {
+    background: linear-gradient(hsl(273, 75%, 66%) 0%, hsl(240, 73%, 65%) 100%);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+#bg-pattern-mobile, #woman-image-mobile {
+    display: none;
+}
+#bg-pattern-desktop, #box-image-desktop, #woman-image-desktop {
+    display: block;
+}
+/* #bg-pattern-desktop {
+} */
+.upside-whitespace, .attribution {
+    flex-basis: 50px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+main {
+    display: flex;
+    background-color: white;
+    border-radius: 1.7rem;
+    width: 75rem;
+    height: 42rem;
+}
+.overflow-hidden-images-container {
+    position: relative;
+    height: 42rem;
+    overflow: hidden;
+}
+.FAQ-image, .FAQ-info {
+    flex-basis: 37.5rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.FAQ-image {
+    position: relative;
+}
+#bg-pattern-desktop {
+    width: 80rem;
+    position: absolute;
+    bottom: -12rem;
+    right: 5.5rem;
+    
+}
+#woman-image-desktop {
+    width: 39rem;
+    position: absolute;
+    left: -6.8rem;
+    top: 6.3rem;
+}
+#box-image-desktop {
+    position: absolute;
+    top: 17.5rem;
+    left: -8rem;
+}
+.FAQ-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+.title {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: hsl(238, 29%, 16%);
+
+    margin-top: 4rem;
+}
+.accordion-container {
+    position: relative;
+    margin-top: 3rem;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.arrow-icon {
+    position: absolute;
+    width: 1rem;
+    right: 7rem;
+    padding-top: 0.5rem;
+}
+.accordion-menu {
+    cursor: pointer;
+    font-size: 1.25rem;
+    color: hsl(237, 12%, 33%);
+
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
+}
+.accordion-body {
+    display: none;
+
+    font-size: 1rem;
+    color: hsl(240, 6%, 50%);
+   
+}
+.accordion-divider {
+    border: 0;
+    border-top: 1px solid hsl(240, 5%, 91%);
+    margin-left: 0;
+    margin-right: auto;
+    width: 30.5rem;
+}
+.accordion-ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    * {
+        box-sizing: border-box;
+    }
+    #bg-pattern-desktop, #box-image-desktop, #woman-image-desktop {
+        display: none;
+    }
+    #bg-pattern-mobile, #woman-image-mobile {
+        display: block;
+    }
+}
