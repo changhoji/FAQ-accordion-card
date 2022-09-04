@@ -82,21 +82,21 @@ main {
 .accordion-container {
     position: relative;
     margin-top: 3rem;
+    margin-right: 7rem;
     font-family: 'Kumbh Sans', sans-serif;
 }
 .arrow-icon {
     position: absolute;
     width: 1rem;
-    right: 7rem;
+    right: 1rem;
     padding-top: 0.5rem;
 }
 .accordion-menu {
+    margin-bottom: 1rem;
     cursor: pointer;
     font-size: 1.25rem;
     color: hsl(237, 12%, 33%);
 
-    margin-top: 1.3rem;
-    margin-bottom: 1.3rem;
 }
 .accordion-body {
     display: none;
@@ -108,8 +108,10 @@ main {
 .accordion-divider {
     border: 0;
     border-top: 1px solid hsl(240, 5%, 91%);
-    margin-left: 0;
     margin-right: auto;
+
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
     width: 30.5rem;
 }
 .accordion-ul {
