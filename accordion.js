@@ -6,9 +6,19 @@ var viewing = false;
 
 function toggle_accordion(self) {
     self.nextElementSibling.style.display = "block";
+    self.firstElementChild.style.rotate = "180deg";
+    self.firstElementChild.style.marginTop = "0.4rem";
+    self.style.fontWeight = "bold";
+    self.style.color = "hsl(238, 29%, 16%)";
+
 
     if (viewing) {
-        highlighted.nextElementSibling.style.display = "none";
+        highlighted.nextElementSibling.style.display = "";
+        highlighted.firstElementChild.style.rotate = "";
+        highlighted.firstElementChild.style.marginTop = "";
+        highlighted.style.fontWeight = "";
+        highlighted.style.color = "";
+
         if (highlighted == self) viewing = false; //그냥 접음
     }
     else {
