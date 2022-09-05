@@ -12,7 +12,6 @@ body {
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    max-width: 1440px;
     min-width: 80rem;
     overflow-y: hidden;
 }
@@ -73,8 +72,8 @@ main {
 .FAQ-info {
     display: flex;
     flex-direction: column;
-    padding-left: 1rem;
 }
+
 .title {
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: bold;
@@ -137,6 +136,11 @@ main {
     #bg-pattern-mobile, #woman-image-mobile {
         display: block;
     }
+    body {
+        overflow-y: scroll;
+        max-height: 98vh;
+        min-height: 70rem;
+    }
     main {
         flex-direction: column;
         height: 50rem;
@@ -144,6 +148,16 @@ main {
     }
     .FAQ-image {
         flex-basis: 8rem;
+    }
+    .upside-whitespace {
+        flex-basis: 10rem;
+        flex-shrink: 3;
+        flex-grow: 3;
+    }
+    .attribution {
+        flex-basis: 3.3rem;
+        flex-shrink: 1;
+        flex-grow: 1;
     }
     #woman-image-mobile {
         position: absolute;
