@@ -60,8 +60,7 @@ In javascript, I tried to style the next element of an specific element. But I f
 ### Useful resources
 
 - [childNodes, parentNode, Sibling](https://itun.tistory.com/501) - This helped me for How to approach nearby elements from specific element.
-- 
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [nextSibling vs nextElementSibling](https://developer.mozilla.org/ko/docs/Web/API/Node/nextSibling) - However, I continued to struggle because it was not selected properly in the above reference, and I found that I had to use nextElementSibling on this site to select elements other than text.
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
