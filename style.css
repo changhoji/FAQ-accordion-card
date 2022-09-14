@@ -45,12 +45,12 @@ main {
     height: 42rem;
     overflow: hidden;
 }
-.FAQ-image, .FAQ-info {
+.faq-image, .faq-info {
     flex-basis: 37.5rem;
     flex-grow: 0;
     flex-shrink: 0;
 }
-.FAQ-image {
+.faq-image {
     position: relative;
 }
 #bg-pattern-desktop {
@@ -71,7 +71,7 @@ main {
     top: 17.5rem;
     left: -8rem;
 }
-.FAQ-info {
+.faq-info {
     display: flex;
     flex-direction: column;
 }
@@ -151,7 +151,7 @@ main {
         height: 50rem;
         width: 30rem;
     }
-    .FAQ-image {
+    .faq-image {
         flex-basis: 8rem;
     }
     .upside-whitespace {
@@ -180,7 +180,7 @@ main {
     .title {
         text-align: center;
     }
-    .FAQ-info {
+    .faq-info {
         margin-right: auto;
         width: 30rem;
         padding-left: 0;
